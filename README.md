@@ -27,12 +27,22 @@ This project uses SQL to explore two related tables — patient records and hosp
 - Which year had the highest number of admissions?
 - What is the average billing amount for each admission type?
 
+**Additional Analysis**
+- What is the average patient age per medical condition?
+- How are patients distributed across age groups (Under 18, 18-40, 41-60, 60+)?
+- Who are the top 5 patients by billing amount?
+- Which insurance provider generates the highest total billing amount?
+- What is the average length of stay per doctor?
+- What is the average length of stay per admission type?
+- How do admissions trend by month across all years?
+
 ## Techniques Used
 
 - Aggregate functions (`COUNT`, `AVG`, `MAX`) with `GROUP BY`
-- Date functions (`DATEDIFF`, `YEAR`) for admission duration and yearly trends
+- Date functions (`DATEDIFF`, `YEAR`, `MONTH`) for admission duration and time-based trends
 - Filtering with `WHERE` and `BETWEEN` for date ranges and demographic conditions
-- Sorting and ranking results with `ORDER BY`
+- Sorting and ranking results with `ORDER BY` and `LIMIT`
+- Conditional logic with `CASE` for age-group bucketing
 
 ## How to Run
 
@@ -42,4 +52,4 @@ This project uses SQL to explore two related tables — patient records and hosp
 
 ## Author
 
-Analysis by Kamsi Emmanuel.
+Analysis by Emmanuel Kamsi.
